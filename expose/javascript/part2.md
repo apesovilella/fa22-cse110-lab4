@@ -124,3 +124,18 @@
     - The `==` is a strict equality of two objects converted to numbers (first conversion and the comparison). The `===` is a strict equality of two objects without the conversion (only comparison).
 
 </br>
+
+17.  **If the function above is called with the following parameters `modifyArray([1,2,3])`, `doSomething`), what will be the result? Briefly walk through how you arrived at that result**.
+     -   The function `modifyArray` takes to arguments, an array called `array` and a function called `callback`. Inside the function block, `newArr` is created and filled with the results of applying the `callback` function to the elements of `array` (in this case, `soSomething` is passed as `callback` and multiplies every element given by 2). The result will be an array with every element twice the original (`[ 2, 4, 6 ]`).
+
+</br>
+
+19.   **What is the output of the above code?**
+      -    The output is:
+        ```
+        1
+        4
+        3
+        2
+        ```
+        Because `setTimeout()` delays the execution of the function defined in line 3 by 1000 miliseconds, so the last number to appear is 2.
